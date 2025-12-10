@@ -1,23 +1,80 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
-/build
-
-# misc
+# ------------------------------------
+# --- General Operating System Files ---
+# ------------------------------------
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+Thumbs.db
 
+# ----------------------------------
+# --- SENSITIVE DATA (CRITICAL) ---
+# ----------------------------------
+# This ignores the environment files containing your API keys (e.g., GEMINI_API_KEY).
+# NEVER commit .env files.
+.env
+.env.*
+backend/.env
+backend/.env.*
+
+# ---------------------------
+# --- Backend (Python/FastAPI) ---
+# ---------------------------
+frontend/.env
+# Virtual Environment Folder
+venv/
+.venv/
+
+# Byte-code and compiled files
+__pycache__/
+*.pyc
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# Test caches
+.pytest_cache/
+
+# -----------------------------
+# --- Frontend (React/Node) ---
+# -----------------------------
+
+# Dependency directory
+/frontend/node_modules
+
+# Build output directories
+/frontend/build
+/frontend/dist
+
+# npm/yarn files
+/frontend/npm-debug.log*
+/frontend/yarn-error.log*
+/frontend/.eslintcache
+# Node modules
+node_modules/
+
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Environment files
+.env
+
+# Build output
+dist/
+build/
+
+# MacOS files
+.DS_Store
+# Node modules
+frontend/node_modules/
+
+# Logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+
+# Environment files
+frontend/.env
+
+# Build output
+frontend/dist/
+frontend/build/
