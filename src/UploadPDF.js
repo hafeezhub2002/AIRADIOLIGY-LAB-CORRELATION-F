@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const BACKEND_URL = "https://airadioligy-lab-correlation-backend.onrender.com";
+const BACKEND_URL = "https://airadioligy-lab-correlationba.onrender.com";
 
 function UploadPDF() {
   const [file, setFile] = useState(null);
