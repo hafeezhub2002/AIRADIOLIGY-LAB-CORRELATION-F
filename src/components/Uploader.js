@@ -19,7 +19,7 @@ function Uploader() {
     formData.append("file", selectedFile);
 
     try {
-      const response = await fetch("https://your-backend.onrender.com/analyze", {
+      const response = await fetch("https://airadioligy-lab-correlation-backend.onrender.com", {
 
         headers: { "Content-Type": "multipart/form-data" },
       });
